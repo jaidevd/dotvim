@@ -31,3 +31,12 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/git-time-lapse"]
+	path = bundle/git-time-lapse
+	url = git@github.com:vim-scripts/git-time-lapse.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = git@github.com:vim-scripts/vimwiki.git
