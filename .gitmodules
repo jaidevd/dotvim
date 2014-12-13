@@ -40,3 +40,12 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = git@github.com:vim-scripts/vimwiki.git
+[submodule "bundle/bundle/vim-template"]
+	path = bundle/bundle/vim-template
+	url = git://github.com/aperezdc/vim-template.git
+[submodule "bundle/vim-template"]
+	path = bundle/vim-template
+	url = git://github.com/aperezdc/vim-template.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = git@github.com:davidhalter/jedi-vim.git
