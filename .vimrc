@@ -54,7 +54,8 @@ set tw=79
 " SUPERTAB
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
-"set completeopt=menuone,longest,preview
+let g:jedi#popup_on_dot = 0
+set completeopt=menuone,longest,preview
 
 " vimwiki
 "set nocompatible
