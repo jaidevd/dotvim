@@ -61,3 +61,18 @@ set completeopt=menuone,longest,preview
 "set nocompatible
 let g:vimwiki_list = [{'path':'/Users/jaidevd/Dropbox/vimwiki'}]
 
+" Open hyperlinks in browser
+let s:http_link_pattern = 'https\?:[^ >)\]]\+'
+let g:browser_command = 'open '
+func! s:find_href()
+  let res = search(s:http_link_pattern, 'cw')
+  if res != 0
+    let href = matchstr(expand("<cWORD>") , s:http_link_pattern)
+    return href
+  end
+endfunc
+func! s:open_href_under_cursor()
+  let command = g:browser_command . " '" . shellescape(s:find_href()) . "' "
+  call system(command)
+endfunc
+nnoremap <leader>o :call <SID>open_href_under_cursor()<CR>
