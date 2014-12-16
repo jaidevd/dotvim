@@ -59,4 +59,5 @@ set completeopt=menuone,longest,preview
 
 " vimwiki
 "set nocompatible
+let g:vimwiki_list = [{'path':'/Users/jaidevd/Dropbox/vimwiki'}]
 
